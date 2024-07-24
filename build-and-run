@@ -99,6 +99,8 @@ xorriso -as mkisofs \
 
 shout "Cleanup"
 
+echo "FELIX: skip boot vm"
+exit 0
 shout "Booting VM to start install"
 
 VBoxManage -v &> /dev/null || { echo "ERROR: VBoxManage not in path!"; exit 1; }
